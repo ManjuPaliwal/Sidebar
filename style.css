@@ -1,0 +1,192 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: rgb(48, 47, 47);
+}
+.side-bar{
+    position: fixed;
+    z-index: 3;
+}
+.scrollUp{
+    position:fixed;
+    z-index: 3;
+    bottom:1.5rem ;
+    right:1.5rem;
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    background-color:rgb(31, 39, 53) ;
+    cursor: pointer;
+}
+a{
+    color: black;
+    font-weight:bolder;
+}
+.main {
+    display: flex;
+}
+
+.list-group {
+    position: fixed;
+    width: 170px;
+    height: 100vh;
+    display: inline-block;
+    list-style: none;
+    background-color: rgb(48, 47, 47);
+    line-height: 3.7rem;
+    display: none;
+    animation: listgroup 1s ease-in-out;
+
+}
+
+.list-link {
+    color: rgb(218, 209, 209);
+    font-weight: bold;
+    margin-left: 1rem;
+    margin-top: 1rem;
+
+}
+
+.list-link:hover {
+    color: rgb(151, 51, 26);
+    text-decoration: none;
+}
+
+.list-item:hover {
+    background-color: gray;
+}
+
+.fa-bars {
+    margin: 1.5rem 0 0 1.5rem;
+    font-size: 2rem;
+    cursor: pointer;
+    color: rgb(31, 39, 53);
+
+}
+
+section {
+    width: 100%;
+}
+.home{
+    height: 800px;
+    background-image: url('https://cdn.pixabay.com/photo/2017/04/25/22/28/despaired-2261021_1280.jpg');
+    background-size: cover;
+   background-repeat: no-repeat;
+}
+h4{
+    margin-left: 1rem;
+    margin-top: 3rem;
+    color: rgba(255, 255, 255, 0.856);
+   text-shadow: 0 10px 5px rgba(0,0,0,0.8);
+}
+.about{
+    margin-top: 3rem;
+}
+
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    color: rgb(31, 39, 53);
+    letter-spacing: 1px;
+text-shadow: 0 0 2px rgba(226, 226, 226, 0.8);
+}
+
+p {
+    font-family: cursive;
+    font-weight: bold;
+    color: rgb(31, 39, 53);
+}
+#info,#contact,#guid{
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARwAAACxCAMAAAAh3/JWAAAAA1BMVEXRtIxPlsZqAAAASElEQVR4nO3BMQEAAADCoPVPbQ0PoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIALA8UNAAFusnLHAAAAAElFTkSuQmCC');
+    background-size: cover;
+   background-repeat: no-repeat;
+   opacity: 0.6;
+   box-shadow: 10px 0 10px 1px rgb(66, 63, 56);
+   padding: 10px;
+   display: flex;
+   flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align:center;
+padding: 15px;
+}
+
+.heading{
+    color: white;
+    padding: 20px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+}
+.infopara{
+    padding: 20px;
+      border: 2px solid rgb(31, 39, 53);
+      border-radius: 10px;
+      position: relative;
+    text-align:justify;
+}
+.infopara::before{
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: calc(100% + 20px);
+    height: calc(100% + 20px);
+    border: 2px solid rgb(31, 39, 53);
+    border-radius: 20px;
+    z-index: -1;
+}
+.infopara::after{
+    content: '';
+      position: absolute;
+      top: -10px;
+      left: -10px;
+      width: calc(100% + 20px);
+      height: calc(100% + 20px);
+      border: 2px solid rgb(31, 39, 53);
+      border-radius: 30px;
+      z-index: -2;
+}
+
+@keyframes listgroup {
+    0% {
+        left: -13rem;
+    }
+
+    100% {
+        left: 0;
+    }
+}
+
+@-webkit-keyframes section {
+    0% {
+       padding-left: 0;
+    }
+
+    100% {
+       padding-left: 10.5rem;
+    }
+}
+
+@-webkit-keyframes sectiontoggle {
+    0% {
+       padding-left: 10.5rem;
+    }
+
+    100% {
+       padding-left: 0;
+    }
+}
