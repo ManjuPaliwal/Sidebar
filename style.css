@@ -25,6 +25,10 @@ body{
     background-color:rgb(31, 39, 53) ;
     cursor: pointer;
 }
+.scrollUp a{
+    color: white;
+}
+
 a{
     color: black;
     font-weight:bolder;

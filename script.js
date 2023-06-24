@@ -15,13 +15,12 @@ bars.addEventListener('click', function () {
         listGroup.style.display = 'block';
         section.style.padding = "0 0 0 10.5rem"
         section.style.animation = 'section 1s '
-
         openClose = false;
 
     } else {
 
         section.style.padding = "0 0 0 0"
-        section.style.animation = 'sectiontoggle 1s '
+        section.style.animation = 'sectiontoggle 1s ';
         listGroup.style.display = 'none';
         openClose = true;
 
@@ -32,12 +31,15 @@ bars.addEventListener('click', function () {
 
 
 
-// listItem.forEach(function(item){
-//     item.addEventListener('click',function(){
-// listGroup.style.display='none';
+listItem.forEach(function(item){
+    item.addEventListener('click',function(){
+section.style.padding = "0 0 0 0"
+        section.style.animation = 'sectiontoggle  ';
+        listGroup.style.display = 'none';
+        openClose = true;
 
-//     })
-// })
+    })
+})
 
 
 
