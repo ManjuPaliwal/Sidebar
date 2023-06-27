@@ -26,7 +26,7 @@ bars.addEventListener('click', function () {
 
     }
 
-})
+});
 
 
 
@@ -38,8 +38,8 @@ section.style.padding = "0 0 0 0"
         listGroup.style.display = 'none';
         openClose = true;
 
-    })
-})
+    });
+});
 
 
 
